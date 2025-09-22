@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About the Author</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: url('Images/earth2.jpg') center/cover no-repeat fixed, linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #222;
+        }
+
+        .site-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8em;
+            color: white;
+            letter-spacing: 10px;
+        }
+
+        .header {
+            background: rgba(1, 28, 64, 0.85);
+            color: #fff;
+            padding: 30px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius:12px;
+            margin: 0px auto 0px auto;
+            max-width: 1800px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-weight: 500;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: x-large;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #c3cfe2;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            background: #011C40;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 32px;
+            max-width: 900px;
+            margin: 30px auto 30px auto;
+        }
+        .profile-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2d5a88;
+            margin-right: 32px;
+            box-shadow: 0 2px 8px rgba(45,90,136,0.12);
+            background: #eee;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 2em;
+            color: white;
+            font-weight: 700;
+        }
+        .profile-info p {
+            margin: 0;
+            font-size: 1.1em;
+            color: #8f8e8e;
+        }
+        .bio-section {
+            background: rgba(1, 28, 64, 0.85);
+            border-radius:12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            padding: 28px 32px;
+            font-size: 1.13em;
+            line-height: 1.7;
+            color: white;
+        }
+        @media (max-width: 700px) {
+            .header, .profile-section, .bio-section {
+                max-width: 98vw;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 10px;
+            }
+            .profile-photo {
+                margin-bottom: 16px;
+                margin-right: 0;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.25s;}
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-in">
+    <div class="header">
+        <div class="site-title"><strong>SPACE</strong></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="AboutAuthor.html">About Author</a>
+            <a href="Contents/Content1.html">The Tour</a>
+        </nav>
+    </div>
+    </div>
+    <div class="fade-in" style="animation-delay: 1s;">
+    <div class="profile-section">
+        <img src="Images/authornew1.jpg" alt="Author Photo" class="profile-photo">
+        <div class="profile-info">
+            <h2>Enzo Matteo Mendoza</h2>
+            <p>A passionate student who strives for learning</p>
+        </div>
+    </div>
+    </div>
+    <div class="fade-in" style="animation-delay: 1.5s;">
+    <div class="bio-section">
+        <p>Hello! I'm Enzo Mendoza. Ever since I was young, i've always been interested in topics such as space and engineering. I've played many games that were about these topics, and my dream currently is to become an Aerospace Engineer!</p>
+        <p>I love to code, it has been one of my favorite things to do ever since I entered Pisay. I decided that if I love space, and coding, why not make the theme of my website reflect that? So I did just that!</p>
+        <p>During my free time, I would normally do gaming sessions with my friends, or watch some cool videos about space and other STEM subjects.</p>
+    </div>
+    </div>
+</body>
+</html>

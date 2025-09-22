@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>1QSummative_Mendoza_Balingkilat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Images/darkearthbackgroundquality.png');
+            background-size: cover;
+            background-position: center -70px;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: transparent;
+            color: #fff;
+            padding: 30px 0 220px 0;
+            text-align: center;
+            font-family: "orbitron", sans-serif;
+        }
+
+        header .maintitle {
+            font-size: 6rem;
+            letter-spacing: 15px;
+        }
+
+        header .subtitle {
+            font-size: 1.5rem;
+            letter-spacing: 8px;
+            margin-top: -70px;
+            color: #ddd;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+            margin: 50px auto;
+            max-width: 1920px;
+            flex-wrap: wrap;
+        }
+        .interest-card {
+            background: #02091a;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            width: 300px;
+            min-height: 220px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+            border: 2px solid transparent;
+        }
+        .interest-card:hover {
+            box-shadow: 0 6px 24px rgba(74,144,226,0.18);
+            border-color: #4a90e2;
+            transform: translateY(-6px) scale(1.03);
+        }
+        .interest-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            color: #4a90e2;
+        }
+        .interest-content {
+            font-size: 1rem;
+            color: #333;
+            min-height: 60px;
+            margin-bottom: 12px;
+        }
+        .interest-image {
+            width: auto;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 14px;
+            background: #eaeaea;
+            display: block;
+        }
+        @media (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.5s;}
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+        }
+    </style>
+</head>
+<body class="fade-in">
+    <header>
+        <p class="maintitle">Space</p>
+        <p class="subtitle">and everything about it!</p>
+    </header>
+    <main class="fade-in" style="animation-delay: 1s;">
+        <div class="container">
+            <a class="interest-card" href="AboutAuthor.html">
+                <!-- Optional: Add your image below -->
+                <img src="Images/authornew1.jpg" alt="Image of an Author" class="interest-image"> 
+                <div class="interest-title">About the Author</div>
+            </a>
+            <a class="interest-card" href="Contents/Content1.html">
+                <!-- Optional: Add your image below -->
+                <img src="Images/rocket.jpg" alt="A holographic rocket flying into Space" class="interest-image">
+                <div class="interest-title">The Tour</div>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
